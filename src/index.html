@@ -10,7 +10,7 @@
 </head>
 <body>
     <div id="app">
-	<table class="table table">
+	<table class="table">
 		<tr v-for="item in students"  v-bind:key="item.id"> 
 			<td>{{item.name}}</td>
             <td><input type="checkbox" v-model="item.isDonePr"></td>
