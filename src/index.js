@@ -23,7 +23,6 @@ new Vue({
     },
     mounted: function () {
         axios.get('http://46.101.212.195:3000/students').then((response) => this.students = response.data)
-        axios.get('https://api.privatbank.ua/p24api/pubinfo?json&exchange&coursid=5').then((response) => this.ccy = response.data)
     },
     methods: {
         deleteStudent(studId) {
